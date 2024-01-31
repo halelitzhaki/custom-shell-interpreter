@@ -14,7 +14,7 @@ This assignment includes a shell program that support the following actions:
 
 ## Installation
 
-To install OS_Assignment_2, run on terminal - 
+To install AP_Assignment_1, run on terminal - 
 ```bash
 git clone https://github.com/halelitzhaki/AP_Assignment_1.git
 ```
