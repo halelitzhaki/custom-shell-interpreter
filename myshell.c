@@ -353,12 +353,24 @@ void echo_func(char *argv[]) {
         var_func(argv_temp);
     }
     else {
-        if(argv[1][0] == '"' && argv[1][strlen(argv[1])-1] == '"'){
+        if(argv[1][0] == '"') {
             char temp[LEN];
-            for(int i = 1, j = 0; i < strlen(argv[1]) -1; i++, j++) {
+            for(int i = 1, j = 0; i < strlen(argv[1]); i++, j++) {
                 temp[j] = argv[1][i];
             }
             argv[1] = temp;
+            int k = 1;
+            while(argv[k] != NULL) {
+                if(argv[k][strlen(argv[k]) - 1]== '"') {
+                    char temp2[LEN];
+                    for(int i = 0, j = 0; i < strlen(argv[k]) - 1; i++, j++) {
+                        temp2[j] = argv[k][i];
+                    }
+                    argv[k] = temp2;
+                    break;
+                }
+                k++;
+            }
         }
         redirect_func(argv);
     }
@@ -379,7 +391,7 @@ void var_func(char *argv[]) {
     var * temp = head;
     while(head != NULL) {
         if(strcmp(head->name, argv[0]) == 0) {
-            strcpy(head->next->value, argv[2]);
+            strcpy(head->value, argv[2]);
             break;
         }
         if(head->next == NULL) {
