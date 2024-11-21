@@ -1,6 +1,6 @@
 # Custom Shell Interpreter
 
-This project is a custom Unix-like shell interpreter implemented in C++. It supports basic command execution, piping, and redirection, providing a simplified environment to execute shell commands.
+This project is a custom Unix-like shell interpreter implemented in C. It supports basic command execution, piping, and redirection, providing a simplified environment to execute shell commands.
 
 ## Features
 
@@ -12,8 +12,8 @@ This project is a custom Unix-like shell interpreter implemented in C++. It supp
 
 ### Prerequisites
 
-- C++ compiler supporting C++11 or later.
-- Unix-like operating system (Linux, macOS).
+- A Linux environment (Ubuntu or other distributions).
+- GCC compiler.
 
 ### Installation
 
@@ -35,14 +35,14 @@ This project is a custom Unix-like shell interpreter implemented in C++. It supp
    make
    ```
 
-   This will generate an executable named `custom_shell`.
+   This will generate an executable named `myshell`.
 
 ### Running the Shell
 
 Execute the compiled program:
 
 ```bash
-./custom_shell
+./myshell
 ```
 
 You will enter the custom shell environment, where you can input commands as you would in a standard Unix shell.
@@ -70,8 +70,8 @@ You will enter the custom shell environment, where you can input commands as you
 
 ## Project Structure
 
-- `src/`: Contains the source code files for the shell implementation.
-- `include/`: Header files.
+- `myshell.c`: Source code for the shell implementation.
+- `source.h`: The source code header file.
 - `Makefile`: Facilitates the build process.
 - `README.md`: Provides an overview and instructions for the project.
 
