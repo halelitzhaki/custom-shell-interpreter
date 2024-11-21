@@ -77,10 +77,15 @@ You will enter the custom shell environment, where you can input commands as you
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+This project was developed as part of an academic assignment to practice advanced C and OS programming concepts.
 
 ## Author
 
-Halel Itzhaki
+**Halel Itzhaki**
 
 For any questions or suggestions, please feel free to contact me.
+
