@@ -81,6 +81,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Author
 
-Hale Litzhaki
+Halel Itzhaki
 
 For any questions or suggestions, please feel free to contact me.
